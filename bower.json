@@ -1,0 +1,29 @@
+{
+  "name": "moneylira",
+  "homepage": "https://github.com/gurkanuzunca/moneylira",
+  "authors": [
+    "Gürkan Uzunca <selam@gurkanuzunca.com>"
+  ],
+  "description": "Para",
+  "main": "main.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "money",
+    "lira",
+    "para"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
