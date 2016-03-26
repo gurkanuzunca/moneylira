@@ -1,0 +1,12 @@
+@import "https://fonts.googleapis.com/css?family=Noto+Sans:400,700";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300";
+
+body {background: #ebeff2 none repeat scroll 0 0; color: #797979; font-family: "Noto Sans", Helvetica, Arial, sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 65px;}
+h1, h2, h3, h4, h5, h6 {color: #505458; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; margin: 10px 0;}
+p {line-height: 1.6;  }
+* {outline: medium none !important;}
+b {font-weight: 600;}
+a:hover {outline: 0 none; text-decoration: none;}
+a:active {outline: 0 none; text-decoration: none;}
+a:focus {outline: 0 none; text-decoration: none;}
+.container {width: 90%;}
