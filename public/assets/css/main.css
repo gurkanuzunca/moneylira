@@ -3,10 +3,32 @@
 
 body {background: #ebeff2 none repeat scroll 0 0; color: #797979; font-family: "Noto Sans", Helvetica, Arial, sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 65px;}
 h1, h2, h3, h4, h5, h6 {color: #505458; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; margin: 10px 0;}
-p {line-height: 1.6;  }
 * {outline: medium none !important;}
 b {font-weight: 600;}
 a:hover {outline: 0 none; text-decoration: none;}
 a:active {outline: 0 none; text-decoration: none;}
 a:focus {outline: 0 none; text-decoration: none;}
 .container {width: 90%;}
+
+
+#header .head {background-color: #36404a; min-height: 60px;}
+#header .logo {color: #fff; font-size: 20px; font-weight: 700; line-height: 60px;}
+#header .navigation {background-color: #fff; box-shadow: 0 1px 1px rgba(0,0,0,0.1);}
+#header .navigation ul {list-style: none; margin: 0; padding: 0;}
+#header .navigation ul > li {float: left;}
+#header .navigation ul > li > a {color: #36404a; display: block; font-weight: 500; padding: 25px 30px;}
+#header .navigation ul > li > a:hover {color: #5fbeaa;}
+#header .navigation ul > li > a:first-child {padding-left: 0;}
+
+#main {margin: 30px 0;}
+#main .page-header {margin: 0 0 10px 0; padding: 0; border: 0; color: #505458; font-size: 24px; font-weight: 600;}
+#main .page-header-text {margin: 0 0 20px 0;}
+#main .breadcrumb {background: transparent; padding: 0; margin: 0 0 20px 0;}
+
+.panel.panel-default .panel-caption {margin: 0 0 10px 0; color: #797979; font-size: 16px; font-weight: 600;}
+.panel.panel-default .panel-caption-text {margin: 0 0 10px 0; color: #98a6ad; font-size: 13px;}
+
+.card {margin-bottom: 15px;}
+.card .person-name {overflow: hidden;}
+.card .person-name .person-shortname {width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; background-color: #5fbeaa; color: #fff; text-align: center; line-height: 50px; font-size: 20px; float: left;}
+.card .person-name .person-fullname {padding-top: 15px; font-weight: 700;}
