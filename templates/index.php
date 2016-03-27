@@ -59,19 +59,19 @@
             <div class="col-sm-8">
                 <div class="card panel panel-default">
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-4">
-
-                                <div class="person-name">
-                                    <div class="person-shortname">HB</div>
-                                    <div class="person-fullname">Hasan Baldan</div>
-                                </div>
+                        <div class="table-box">
+                            <div class="table-cell person-name">
+                                <div class="person-shortname">HB</div>
+                                <div class="person-fullname">Hasan Baldan</div>
                             </div>
-
-                            <div class="col-sm-4">
-                                <div class="date">
-                                    12-10-2016
-                                </div>
+                            <div class="table-cell date">
+                                12-10-2016
+                            </div>
+                            <div class="table-cell price">
+                                200 TL
+                            </div>
+                            <div class="table-cell price">
+                                200 TL
                             </div>
                         </div>
                     </div>
