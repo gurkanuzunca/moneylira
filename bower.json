@@ -27,6 +27,7 @@
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.5.0",
     "bootstrap-checkbox-x": "^1.5.4",
-    "material-design-iconic-font": "^2.2.0"
+    "material-design-iconic-font": "^2.2.0",
+    "switchery": "^0.8.1"
   }
 }

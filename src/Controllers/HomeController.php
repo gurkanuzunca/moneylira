@@ -10,4 +10,9 @@ class HomeController extends Controller
         return $this->render('index.php', array('a' => 'sdasds'));
     }
 
+    public function customerAction($request, $response, $args)
+    {
+        return $this->render('customer.php', array('a' => 'sdasds'));
+    }
+
 }
