@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/component.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
@@ -56,28 +57,79 @@
         </ol>
 
         <div class="row">
-            <div class="col-sm-8">
-                <div class="card panel panel-default">
+
+
+            <div class="col-sm-9">
+                <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="table-box">
-                            <div class="table-cell person-name">
-                                <div class="person-shortname">HB</div>
-                                <div class="person-fullname">Hasan Baldan</div>
-                            </div>
-                            <div class="table-cell date">
-                                12-10-2016
-                            </div>
-                            <div class="table-cell price">
-                                200 TL
-                            </div>
-                            <div class="table-cell price">
-                                200 TL
-                            </div>
-                        </div>
+                        <h3 class="panel-caption">ÖNİZLEME</h3>
+                        <p class="panel-caption-text">Son işlemler</p>
+
+
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th class="table-check">
+                                    <div class="checkbox checkbox-primary">
+                                        <input title="" type="checkbox" checked="">
+                                        <label></label>
+                                    </div>
+                                </th>
+                                <th>İsim</th>
+                                <th class="text-right">Tutar</th>
+                                <th class="text-center">Durum</th>
+                                <th>Tarih</th>
+                                <th class="text-right">İşlemler</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox checkbox-primary">
+                                        <input title="" type="checkbox" checked="">
+                                        <label></label>
+                                    </div>
+                                </td>
+                                <td>Hasan Ballı</td>
+                                <td class="text-right">150.00 TL</td>
+                                <td class="text-center">
+                                    <span class="label label-success">Alacak</span>
+                                </td>
+                                <td>12/10/2016</td>
+                                <td class="table-action">
+                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="checkbox checkbox-primary">
+                                        <input title="" type="checkbox" checked="">
+                                        <label></label>
+                                    </div>
+                                </td>
+                                <td>Hasan Ballı</td>
+                                <td class="text-right">150.00 TL</td>
+                                <td class="text-center">
+                                    <span class="label label-purple">Borç</span>
+                                </td>
+                                <td>12/10/2016</td>
+                                <td class="table-action">
+                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                    <a href="#"><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+
+
+
+            <div class="col-sm-3">
                 <div class="panel panel-default">
 
                     <div class="panel-body">
