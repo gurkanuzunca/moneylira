@@ -1,4 +1,2 @@
 /vendor/
-/public/assets/libs/*
-!/public/assets/libs/.gitkeep
 /.idea/
