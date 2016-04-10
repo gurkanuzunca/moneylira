@@ -27,6 +27,7 @@ a:focus {outline: 0 none; text-decoration: none;}
 
 .panel .panel-caption {margin: 0 0 10px 0; color: #797979; font-size: 16px; font-weight: 600;}
 .panel .panel-caption-text {margin: 0 0 10px 0; color: #98a6ad; font-size: 13px;}
+.panel .panel-footer .pagination {margin: 0;}
 .panel .table-check {width: 20px;}
 .panel .table-action {text-align: right; width: 100px;}
 .panel .table-action a {color: #98a6ad; display: inline-block; margin-left: 5px; font-size: 16px;}

@@ -1,5 +1,4 @@
 /vendor/
-/logs/*
 /public/assets/libs/*
-!/logs/README.md
+!/public/assets/libs/.gitkeep
 /.idea/

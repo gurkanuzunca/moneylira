@@ -48,12 +48,10 @@
 
 <main id="main">
     <div class="container">
-        <h1 class="page-header">Blank Page</h1>
+        <h1 class="page-header">Önizleme</h1>
 
         <ol class="breadcrumb">
-            <li><a href="#">Anasayfa</a></li>
-            <li><a href="#">Pages</a></li>
-            <li class="active">Blank Page</li>
+            <li class="active">Anasayfa</li>
         </ol>
 
         <div class="row">
@@ -62,8 +60,8 @@
             <div class="col-sm-9">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <h3 class="panel-caption">ÖNİZLEME</h3>
-                        <p class="panel-caption-text">Son işlemler</p>
+                        <h3 class="panel-caption">EYLEMLER</h3>
+                        <p class="panel-caption-text">Eklenen son işlemler</p>
 
 
                         <table class="table table-hover">
@@ -71,13 +69,13 @@
                             <tr>
                                 <th class="table-check">
                                     <div class="checkbox checkbox-primary">
-                                        <input title="" type="checkbox" checked="">
+                                        <input title="" type="checkbox">
                                         <label></label>
                                     </div>
                                 </th>
                                 <th>İsim</th>
                                 <th class="text-right">Tutar</th>
-                                <th class="text-center">Durum</th>
+                                <th>Durum</th>
                                 <th>Tarih</th>
                                 <th class="text-right">İşlemler</th>
                             </tr>
@@ -86,13 +84,13 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-primary">
-                                        <input title="" type="checkbox" checked="">
+                                        <input title="" type="checkbox">
                                         <label></label>
                                     </div>
                                 </td>
                                 <td>Hasan Ballı</td>
-                                <td class="text-right">150.00 TL</td>
-                                <td class="text-center">
+                                <td class="text-right">150,00 TL</td>
+                                <td>
                                     <span class="label label-success">Alacak</span>
                                 </td>
                                 <td>12/10/2016</td>
@@ -105,13 +103,13 @@
                             <tr>
                                 <td>
                                     <div class="checkbox checkbox-primary">
-                                        <input title="" type="checkbox" checked="">
+                                        <input title="" type="checkbox">
                                         <label></label>
                                     </div>
                                 </td>
                                 <td>Hasan Ballı</td>
-                                <td class="text-right">150.00 TL</td>
-                                <td class="text-center">
+                                <td class="text-right">150,00 TL</td>
+                                <td>
                                     <span class="label label-purple">Borç</span>
                                 </td>
                                 <td>12/10/2016</td>
@@ -124,7 +122,29 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <div class="panel-footer">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+
             </div>
 
 

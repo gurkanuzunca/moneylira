@@ -5,7 +5,8 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/../templates/',
+            'templatePath' => __DIR__ . '/../views/',
+            'cachePath' => __DIR__ . '/../cache/twig/',
         ],
 
         // Monolog settings
