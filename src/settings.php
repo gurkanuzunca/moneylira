@@ -6,13 +6,13 @@ return [
         // Renderer settings
         'renderer' => [
             'templatePath' => __DIR__ . '/../views/',
-            'cachePath' => __DIR__ . '/../cache/twig/',
+            'cachePath' => __DIR__ . '/../var/cache/twig/',
         ],
 
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',
-            'path' => __DIR__ . '/../logs/app.log',
+            'path' => __DIR__ . '/../var/logs/app.log',
         ],
     ],
 ];
