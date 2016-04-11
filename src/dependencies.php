@@ -14,9 +14,12 @@ $container['renderer'] = function ($c) {
 $container['renderer'] = function ($c) {
     $settings = $c->get('settings')['renderer'];
 
-    $view = new \Slim\Views\Twig($settings['templatePath'], [
+    $view = new Slim\Views\Twig($settings['templatePath'], [
         //'cache' => $settings['cachePath']
     ]);
+
+    $view->addExtension(new Src\Support\TwigExtension\Common());
+
 
     return $view;
 };

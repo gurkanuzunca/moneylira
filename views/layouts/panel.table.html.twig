@@ -9,42 +9,49 @@
         <table class="table table-hover">
             <thead>
             <tr>
-                {% if hideCheckbox is sameas(true) %}
+                {% if table.checkbox is sameas(true) %}
                     <th class="table-check">
                         <div class="checkbox checkbox-primary">
-                            <input title="" type="checkbox">
+                            <input title="Check All" type="checkbox">
                             <label></label>
                         </div>
                     </th>
                 {% endif %}
-                <th>İsim</th>
-                <th class="text-right">Tutar</th>
-                <th>Durum</th>
-                <th>Tarih</th>
+                {% for cell in table.cells %}
+                    <th class="{{ cell.class }}">{{ cell.caption }}</th>
+                {% endfor %}
                 <th class="text-right">İşlemler</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                {% if hideCheckbox is sameas(true) %}
-                    <td>
-                        <div class="checkbox checkbox-primary">
-                            <input title="" type="checkbox">
-                            <label></label>
-                        </div>
-                    </td>
-                {% endif %}
-                <td>Hasan Ballı</td>
-                <td class="text-right">150,00 TL</td>
-                <td>
-                    <span class="label label-success">Alacak</span>
-                </td>
-                <td>12/10/2016</td>
-                <td class="table-action">
-                    <a href="#"><i class="fa fa-pencil"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                </td>
-            </tr>
+            {% if (records) %}
+                {% for record in records %}
+                    <tr>
+                        {% if table.checkbox is sameas(true) %}
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input title="Check" type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                        {% endif %}
+
+                        {% for cell in table.cells %}
+                            <td class="{{ cell.class }}">
+                                {% if cell.callable %}
+                                    {{ attribute(record, cell.column)|callable(cell.callable)|raw }}
+                                {% else %}
+                                    {{ attribute(record, cell.column) }}
+                                {% endif %}
+                            </td>
+                        {% endfor %}
+                        <td class="table-action">
+                            <a href="#"><i class="fa fa-pencil"></i></a>
+                            <a href="#"><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
 
             <tr>
                 <td>
