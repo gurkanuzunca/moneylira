@@ -7,7 +7,7 @@ use Slim\Container;
 
 class Controller
 {
-    private $container;
+    protected $container;
 
     public function __construct(Container $container)
     {
@@ -27,12 +27,15 @@ class Controller
     }
 
 
-
-
-
     protected function render($path, $data = array())
     {
         return $this->container->get('renderer')->render($this->container->get('response'), $path, $data);
+    }
+
+
+    protected function getRepository($name)
+    {
+        return $this->container->get('repository')->get($name);
     }
 
 

@@ -14,15 +14,34 @@ $container['renderer'] = function ($c) {
 $container['renderer'] = function ($c) {
     $settings = $c->get('settings')['renderer'];
 
+
     $view = new Slim\Views\Twig($settings['templatePath'], [
         //'cache' => $settings['cachePath']
     ]);
 
     $view->addExtension(new Src\Support\TwigExtension\Common());
 
-
     return $view;
 };
+
+
+$container['database'] = function ($c) {
+    $settings = $c->get('settings')['database'];
+
+    $capsule = new Illuminate\Database\Capsule\Manager;
+    $capsule->addConnection($settings);
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+
+    return $capsule;
+};
+
+$container['repository'] = function ($c) {
+    $repository = new Src\Support\RepositoryManager($c);
+
+    return $repository;
+};
+
 
 // monolog
 $container['logger'] = function ($c) {
@@ -30,5 +49,7 @@ $container['logger'] = function ($c) {
     $logger = new Monolog\Logger($settings['name']);
     $logger->pushProcessor(new Monolog\Processor\UidProcessor());
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], Monolog\Logger::DEBUG));
+
     return $logger;
 };
+
