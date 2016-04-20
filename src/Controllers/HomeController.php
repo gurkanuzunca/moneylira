@@ -7,11 +7,10 @@ class HomeController extends Controller
 
     public function indexAction($request, $response, $args)
     {
+
+
         $personRepository = $this->getRepository('Person');
-
         $records = $personRepository->getAll();
-
-
 
 
         $table = array(

@@ -37,7 +37,8 @@ $container['database'] = function ($c) {
 };
 
 $container['repository'] = function ($c) {
-    $repository = new Src\Support\RepositoryManager($c);
+    $settings = $c->get('settings')['repository'];
+    $repository = new Src\Support\RepositoryManager($c, $settings);
 
     return $repository;
 };

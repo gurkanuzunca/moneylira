@@ -2,20 +2,14 @@
 
 namespace Src\Repositories;
 
+use Src\Support\Repository;
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Database\Schema\Blueprint;
 
 use Src\Models\Person;
 
-class PersonRepository
+class PersonRepository extends Repository
 {
-    private $model;
-
-    public function __construct()
-    {
-        $this->model = new Person();
-    }
-
     public function getAll()
     {
         return $this->model->all();

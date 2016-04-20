@@ -14,7 +14,7 @@ return [
             'host'      => 'localhost',
             'database'  => 'moneylira',
             'username'  => 'root',
-            'password'  => '',
+            'password'  => 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
@@ -25,5 +25,11 @@ return [
             'name' => 'slim-app',
             'path' => __DIR__ . '/../var/logs/app.log',
         ],
+
+
+        'repository' => [
+            'repositoryNamespace' => 'Src\\Repositories',
+            'modelNamespace' => 'Src\\Models',
+        ]
     ],
 ];

@@ -10,26 +10,33 @@ class RepositoryManager
 {
 
     private $container;
+    private $settings;
 
 
-    public function __construct(Container $container)
+    public function __construct(Container $container, array $settings)
     {
         $this->container = $container;
+        $this->settings = $settings;
     }
 
 
     public function get($name)
     {
-        $repository = "\\Src\\Repositories\\{$name}Repository";
+        $repositoryName = "{$name}Repository";
+        $repository = "{$this->settings['repositoryNamespace']}\\$repositoryName";
+        $model = "{$this->settings['modelNamespace']}\\$name";
+
         $db = $this->container->get('database');
 
         if ($this->container->has($repository)) {
-            echo 1;
             return $this->container->get($repository);
-
         }
-        echo 'new';
-        return $this->container[$repository] = new $repository();
+
+        $class = new $repository();
+        $class->setModel(new $model());
+
+        return $this->container[$repository] = $class;
+
     }
 
 
