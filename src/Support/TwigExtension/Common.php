@@ -10,7 +10,6 @@ use Twig_SimpleFilter;
 class Common extends Twig_Extension
 {
 
-
     public function getName()
     {
         return 'moneylira';

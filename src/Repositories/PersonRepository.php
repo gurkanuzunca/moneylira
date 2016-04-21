@@ -6,7 +6,6 @@ use Src\Support\Repository;
 use Illuminate\Database\Capsule\Manager;
 use Illuminate\Database\Schema\Blueprint;
 
-use Src\Models\Person;
 
 class PersonRepository extends Repository
 {
